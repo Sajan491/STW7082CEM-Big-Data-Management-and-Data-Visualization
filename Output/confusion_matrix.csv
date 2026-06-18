@@ -1,0 +1,9 @@
+model,actual,predicted,count,type
+Logistic Regression,Failed,Failed,34027,TN
+Logistic Regression,Failed,Successful,5561,FP
+Logistic Regression,Successful,Failed,13054,FN
+Logistic Regression,Successful,Successful,13768,TP
+Random Forest (tuned),Failed,Failed,32886,TN
+Random Forest (tuned),Failed,Successful,6702,FP
+Random Forest (tuned),Successful,Failed,3192,FN
+Random Forest (tuned),Successful,Successful,23630,TP

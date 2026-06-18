@@ -1,0 +1,37 @@
+feature_x,feature_y,corr
+Goal (log),Goal (log),1.0
+Goal (log),Pledged (log),0.132
+Goal (log),Backers (log),0.12
+Goal (log),Duration (d),0.187
+Goal (log),Funding ratio,-0.21
+Goal (log),Success,-0.224
+Pledged (log),Goal (log),0.132
+Pledged (log),Pledged (log),1.0
+Pledged (log),Backers (log),0.93
+Pledged (log),Duration (d),-0.031
+Pledged (log),Funding ratio,0.457
+Pledged (log),Success,0.654
+Backers (log),Goal (log),0.12
+Backers (log),Pledged (log),0.93
+Backers (log),Backers (log),1.0
+Backers (log),Duration (d),-0.047
+Backers (log),Funding ratio,0.548
+Backers (log),Success,0.703
+Duration (d),Goal (log),0.187
+Duration (d),Pledged (log),-0.031
+Duration (d),Backers (log),-0.047
+Duration (d),Duration (d),1.0
+Duration (d),Funding ratio,-0.089
+Duration (d),Success,-0.116
+Funding ratio,Goal (log),-0.21
+Funding ratio,Pledged (log),0.457
+Funding ratio,Backers (log),0.548
+Funding ratio,Duration (d),-0.089
+Funding ratio,Funding ratio,1.0
+Funding ratio,Success,0.555
+Success,Goal (log),-0.224
+Success,Pledged (log),0.654
+Success,Backers (log),0.703
+Success,Duration (d),-0.116
+Success,Funding ratio,0.555
+Success,Success,1.0

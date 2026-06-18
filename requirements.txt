@@ -1,0 +1,26 @@
+# ============================================================
+# Kickstarter Campaign Analytics - Python dependencies
+# Module: STW7082CEM | Student ID: 250289
+# Python: 3.12 (also works on 3.9-3.11)
+#
+# Install with:   pip install -r requirements.txt
+#
+# IMPORTANT - Java is also required (PySpark runs on the JVM):
+#   Install a JDK (8, 11, or 17) e.g. Eclipse Temurin 17,
+#   then set JAVA_HOME to the JDK folder. Verify with: java -version
+# ============================================================
+
+# --- Core Spark engine (PySpark 3.5.x supports Python 3.12) ---
+pyspark==3.5.4
+
+# --- Data handling / numerics (used for results export & seeds) ---
+pandas==2.2.3
+numpy==1.26.4
+
+# --- Visualisation (charts in notebook; Tableau used for final viz) ---
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# --- Notebook runtime ---
+jupyter==1.1.1
+ipykernel==6.29.5

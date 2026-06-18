@@ -1,0 +1,11 @@
+model,metric,value
+Logistic Regression,ACCURACY,0.7196958289414245
+Random Forest (tuned),ACCURACY,0.8510164131907845
+Logistic Regression,F1-Score,0.7090578678888938
+Random Forest (tuned),F1-Score,0.8521356487035534
+Logistic Regression,AUC-ROC,0.7938898125338671
+Random Forest (tuned),AUC-ROC,0.9221844983005816
+Logistic Regression,PRECISION,0.7122975839412282
+Random Forest (tuned),PRECISION,0.7790452327574838
+Logistic Regression,RECALL,0.5133099694280814
+Random Forest (tuned),RECALL,0.8809932145253896
