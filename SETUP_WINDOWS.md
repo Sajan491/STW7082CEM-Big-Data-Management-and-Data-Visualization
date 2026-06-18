@@ -21,9 +21,6 @@ variables load.
 Spark 3.5.x works with Java 8, 11, or 17 **only**. Newer Java (e.g. 21/25) breaks Spark 3.5
 with reflective-access errors, so use **Java 17 (Eclipse Temurin)**.
 
-> This project's JDK 17 is installed at:
-> `C:\Users\sajan.mahat\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.19.10-hotspot`
-> (JDK 25 is also installed but is *not* used - `JAVA_HOME` points at 17 below.)
 
 Download Temurin 17 if needed: https://adoptium.net
 
@@ -128,24 +125,3 @@ Test-Path "C:\hadoop\bin\hadoop.dll"            # should print True
 Then open `Kickstarter_Analysis.ipynb` and run the Phase 1 cells. A successful
 `SparkSession` start with no `winutils`/`hadoop.dll` warnings confirms the environment is ready.
 
----
-
-## Quick Reference - Required Environment Variables
-
-| Variable      | Value                                                                          | Set in |
-|---------------|--------------------------------------------------------------------------------|--------|
-| `JAVA_HOME`   | `C:\Users\sajan.mahat\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.19.10-hotspot` | Step 1 |
-| `HADOOP_HOME` | `C:\hadoop`                                                                     | Step 3 |
-| `PATH` (adds) | `<JAVA_HOME>\bin` (first) and `C:\hadoop\bin`                                   | Steps 1 & 3 |
-
----
-
-## Common Errors
-
-| Error message | Cause | Fix |
-|---------------|-------|-----|
-| `Could not locate executable ...\winutils.exe` | `winutils.exe` missing / `HADOOP_HOME` not set | Step 3 |
-| `UnsatisfiedLinkError: ... hadoop.dll` | `hadoop.dll` missing or wrong version | Step 3 (match Hadoop 3.3.x) |
-| `JAVA_HOME is not set` / `java not recognized` | JDK not installed or not on PATH | Step 1 |
-| `No module named 'pyspark'` | Packages not installed | Step 2 |
-| `Python worker failed to connect` | Notebook kernel uses a different Python than PySpark | Cell 1.1 sets `PYSPARK_PYTHON = sys.executable` - re-run it |
